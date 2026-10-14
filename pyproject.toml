@@ -1,0 +1,27 @@
+[project]
+name = "abliteration-testing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "PrimitivePenguin", email = "browngerbil2006@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.15.0",
+    "datasets>=5.1.0",
+    "einops>=0.8.2",
+    "jaxtyping>=0.3.11",
+    "matplotlib>=3.11.2",
+    "torch>=2.14.1",
+    "tqdm>=4.70.1",
+    "transformer-lens>=4.2.0",
+    "transformers>=5.19.0",
+]
+
+[project.scripts]
+abliteration-testing = "abliteration_testing:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
